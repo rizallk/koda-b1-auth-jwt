@@ -160,3 +160,5 @@ D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\bin\Debug\net10.
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\bin\Debug\net10.0\KodaStore.Application.pdb
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\bin\Debug\net10.0\KodaStore.Infrastructure.pdb
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\bin\Debug\net10.0\KodaStore.Domain.pdb
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Api\obj\Debug\net10.0\KodaStore.Api.sourcelink.json

@@ -1,9 +1,12 @@
 using KodaStore.Domain.Entities;
+using KodaStore.Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace KodaStore.Infrastructure.Persistence;
 
-public sealed class AppDbContext : DbContext
+public sealed class AppDbContext : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
 {
   public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
   {
@@ -17,6 +20,18 @@ public sealed class AppDbContext : DbContext
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
     base.OnModelCreating(modelBuilder);
+
+    // User
+    modelBuilder.Entity<AppUser>(entity =>
+    {
+      entity.Property(user => user.DisplayName)
+              .HasMaxLength(100)
+              .IsRequired();
+
+      entity.Property(user => user.CreatedAtUtc)
+              .IsRequired();
+    });
+
 
     // Category
     modelBuilder.Entity<Category>(entity =>

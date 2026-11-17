@@ -52,7 +52,6 @@ public sealed class ProductController(IProductService service) : ControllerBase
     {
       return Problem(statusCode: StatusCodes.Status400BadRequest, title: "Invalid product data!", detail: e.Message);
     }
-
   }
 
   [HttpPut("{productCode}")]

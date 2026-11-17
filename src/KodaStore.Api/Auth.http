@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:5062
+
+### Register
+POST {{baseUrl}}/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "sad@gmail.com",
+  "password": "QWErTYU1!",
+  "displayName": "Budi Sasonto"
+}
+
+### Login
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "budi@gmail.com",
+  "password": "QWErTYU1!"
+}
+
+### PRoduct
+GET {{baseUrl}}/api/v1/products
+Accept: application/json

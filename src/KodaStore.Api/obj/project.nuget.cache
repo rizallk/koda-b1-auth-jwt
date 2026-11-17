@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wfTFBB0Y6Dw=",
+  "dgSpecHash": "wO7JT6qQl+E=",
   "success": true,
   "projectFilePath": "D:\\Koda\\minitasks\\minitask-asp-net\\koda-store\\src\\KodaStore.Api\\KodaStore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.14\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.14.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.15\\microsoft.aspnetcore.openapi.10.0.15.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.18\\microsoft.bcl.cryptography.9.0.18.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

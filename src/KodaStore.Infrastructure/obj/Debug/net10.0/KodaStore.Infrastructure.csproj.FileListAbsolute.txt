@@ -17,3 +17,4 @@ D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Infrastructure\obj\D
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Infrastructure\obj\Debug\net10.0\KodaStore.Infrastructure.pdb
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Infrastructure\obj\Debug\net10.0\KodaStore.Infrastructure.genruntimeconfig.cache
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Infrastructure\obj\Debug\net10.0\ref\KodaStore.Infrastructure.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Infrastructure\obj\Debug\net10.0\KodaStore.Infrastructure.sourcelink.json

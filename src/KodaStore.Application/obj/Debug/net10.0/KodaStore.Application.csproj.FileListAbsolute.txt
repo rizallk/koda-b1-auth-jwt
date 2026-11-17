@@ -13,3 +13,4 @@ D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Application\obj\Debu
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Application\obj\Debug\net10.0\refint\KodaStore.Application.dll
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.pdb
 D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Application\obj\Debug\net10.0\ref\KodaStore.Application.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.sourcelink.json
