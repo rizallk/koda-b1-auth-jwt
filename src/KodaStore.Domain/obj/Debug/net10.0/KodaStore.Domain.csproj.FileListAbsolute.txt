@@ -1,0 +1,11 @@
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\bin\Debug\net10.0\KodaStore.Domain.deps.json
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\bin\Debug\net10.0\KodaStore.Domain.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\bin\Debug\net10.0\KodaStore.Domain.pdb
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.AssemblyInfoInputs.cache
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.AssemblyInfo.cs
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.csproj.CoreCompileInputs.cache
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\refint\KodaStore.Domain.dll
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\KodaStore.Domain.pdb
+D:\Koda\minitasks\minitask-asp-net\koda-store\src\KodaStore.Domain\obj\Debug\net10.0\ref\KodaStore.Domain.dll

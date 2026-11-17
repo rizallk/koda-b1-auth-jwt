@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KodaStore.Api/KodaStore.Api.csproj" />
+    <Project Path="src/KodaStore.Application/KodaStore.Application.csproj" />
+    <Project Path="src/KodaStore.Domain/KodaStore.Domain.csproj" />
+    <Project Path="src/KodaStore.Infrastructure/KodaStore.Infrastructure.csproj" />
+  </Folder>
+</Solution>

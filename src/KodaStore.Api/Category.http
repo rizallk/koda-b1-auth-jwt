@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:5062
+
+### Test Rollback
+POST {{baseUrl}}/api/v1/categories/with-products
+Content-Type: application/json
+
+{
+    "name": "WW",
+    "productCodes": ["P222", "P002"]
+}
