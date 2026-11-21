@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:5231
+
+### LOGIN
+# @name login
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "sad@gmail.com",
+    "password": "!QWErTYU1!"
+}
+### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YjY4MDlhYy05ODI3LTRjOWQtODA5Zi01ODNiMmVmYjZiNWYiLCJlbWFpbCI6ImJ1ZGlAZ21haWwuY29tIiwianRpIjoiNjNiMmJiNGY0ZDE2NGI2Y2JjMTg2ZWExNTcyM2M0YzkiLCJpYXQiOjE3OTUxNDc0NzQsInJvbGUiOiJDVVNUT01FUiIsIm5iZiI6MTc5NTE0NzQ3NCwiZXhwIjoxNzk1MTQ4Mzc0LCJpc3MiOiJLb2RhU3RvcmUuRGV2IiwiYXVkIjoiS29kYVN0b3JlLkFwaSJ9.CYKHMXK4ciJD9c8sLK7Kgax05SJyYIl0nx1LZOfP_9M
+### ME Test UnAuthorized
+GET {{baseUrl}}/api/v1/auth/me
+Accept: application/json 
+Authorization: Bearer {{login.response.body.$.accessToken}}

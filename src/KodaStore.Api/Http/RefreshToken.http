@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:5231
+
+### LOGIN
+# @name login
+POST {{baseUrl}}/api/v1/auth/login
+Origin: http://localhost:5173
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "sad@gmail.com",
+    "password": "QWErTYU1!"
+}
+
+### TEST ME
+GET {{baseUrl}}/api/v1/auth/me
+Accept: application/json 
+Authorization: Bearer {{login.response.body.$.accessToken}}
+
+### REFRESH TOKEN
+POST {{baseUrl}}/api/v1/auth/refresh
+Origin: http://localhost:2000
+Cookie: koda_refresh=06B9FA1F11C20A6DB9FB316DD703BC0AA5E83805990B8429E880121501E399EF
+Accept: application/json
+
+### LOGOUT
+POST {{baseUrl}}/api/v1/auth/logout
+Origin: http://localhost:5173
+Cookie: koda_refresh=594505FB94CCA31A5EDB05BB525C5513DDD61F5E0F09A6F496127D8165A23D7F
+Accept: application/json

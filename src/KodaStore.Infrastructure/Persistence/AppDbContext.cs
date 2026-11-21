@@ -6,16 +6,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KodaStore.Infrastructure.Persistence;
 
-public sealed class AppDbContext : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
+public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>(options)
 {
-  public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-  {
-  }
-
   public DbSet<Category> Categories => Set<Category>();
   public DbSet<Product> Products => Set<Product>();
   public DbSet<Order> Orders => Set<Order>();
   public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+  public DbSet<RefreshToken> RefreshToken => Set<RefreshToken>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
@@ -32,6 +29,39 @@ public sealed class AppDbContext : IdentityDbContext<AppUser, IdentityRole<Guid>
               .IsRequired();
     });
 
+    // RefreshToken
+    modelBuilder.Entity<RefreshToken>(entity =>
+    {
+      entity.ToTable("RefreshTokens", "dbo");
+      entity.HasKey(token => token.Id);
+      entity.Property(token => token.Id)
+              .ValueGeneratedNever();
+      entity.Property(token => token.TokenHash)
+              .HasMaxLength(64)
+              .IsUnicode(false).IsRequired();
+      entity.HasIndex(token => token.TokenHash)
+              .IsUnique();
+      entity.HasIndex(token => new
+      {
+        token.UserId,
+        token.FamilyId
+      });
+      entity.HasIndex(token => token.FamilyId);
+
+      entity.HasOne(token => token.User)
+              .WithMany()
+              .HasForeignKey(token => token.UserId)
+              .OnDelete(DeleteBehavior.Cascade);
+
+      entity.Property(token => token.CreatedAtUtc)
+              .HasColumnType("datetimeoffset");
+      entity.Property(token => token.ExpiresAtUtc)
+              .HasColumnType("datetimeoffset");
+      entity.Property(token => token.UsedAtUtc)
+              .HasColumnType("datetimeoffset");
+      entity.Property(token => token.RevokedAtUtc)
+              .HasColumnType("datetimeoffset");
+    });
 
     // Category
     modelBuilder.Entity<Category>(entity =>
